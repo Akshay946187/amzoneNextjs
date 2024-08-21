@@ -12,7 +12,7 @@ const CatiProduct = ({data}:{data:any}) => {
     <div className='w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-center  '>
      
       {
-        data.map((item:any)=>{
+        data?.map((item:any)=>{
             return <div key={item._id} className='shadow-md max-w-[250px] p-10 flex flex-col items-center space-y-3 text-center bg-white '>
                 <h1 className='text-xl font-bold'>{item.category}</h1>
                 <div className="w-52 h-48"> {/* Adjust dimensions as needed */}
